@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AssignmentsComponent implements OnInit {
 
   title = 'My Assignments Application';
+  enabled = false;
 
   assignments = [
       {
@@ -40,6 +41,9 @@ export class AssignmentsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      this.enabled = true;
+    }, 2000);
   }
 
 }
