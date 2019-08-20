@@ -17,8 +17,23 @@ export class AssignmentsComponent implements OnInit {
     },
     {
       name: 'Two',
-      dueDate: '2019-01-01',
+      dueDate: '2019-01-02',
       submitted: false
+    },
+    {
+      name: 'Three',
+      dueDate: '2019-01-03',
+      submitted: false
+    },
+    {
+      name: 'Four',
+      dueDate: '2019-01-04',
+      submitted: false
+    },
+    {
+      name: 'Five',
+      dueDate: '2019-01-05',
+      submitted: true
     }
   ];
 
