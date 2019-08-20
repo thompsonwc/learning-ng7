@@ -9,6 +9,7 @@ export class AssignmentsComponent implements OnInit {
 
   title = 'My Assignments Application';
   enabled = false;
+  name: string;
 
   assignments = [
       {
@@ -44,6 +45,10 @@ export class AssignmentsComponent implements OnInit {
     setTimeout(() => {
       this.enabled = true;
     }, 2000);
+  }
+
+  onSubmit(name: string) {
+    console.log(name);
   }
 
 }
