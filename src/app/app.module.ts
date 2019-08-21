@@ -8,13 +8,15 @@ import { SubmittedDirective } from './shared/submitted.directive';
 import { UnsubmittedDirective } from './shared/unsubmitted.directive';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HighlightDirective } from './shared/highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     AssignmentsComponent,
     SubmittedDirective,
-    UnsubmittedDirective
+    UnsubmittedDirective,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

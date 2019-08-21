@@ -10,6 +10,7 @@ export class AssignmentsComponent implements OnInit {
   title = 'My Assignments Application';
   enabled = false;
   name: string;
+  selected = false;
 
   assignments = [
       {
@@ -49,6 +50,11 @@ export class AssignmentsComponent implements OnInit {
 
   onSubmit(name: string) {
     console.log(name);
+  }
+
+  changeSubmission(assignment: any) {
+    assignment.submitted = !assignment.submitted;
+    assignment.submitted ? console.log(assignment.name +  ' submitted') : console.log(assignment.name + ' unsubmitted');
   }
 
 }

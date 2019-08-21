@@ -14,8 +14,13 @@
   <div *ngFor="let assignment of assignments">
 
   <p appSubmitted *ngIf="assignment.submitted; else unsubmitted">
+    <input type="checkbox"
+           (click)="changeSubmission(assignment)">
     Assignment {{assignment.name}} has been submitted!</p>
 
   <ng-template #unsubmitted>
-    <p appUnsubmitted>Assignment {{assignment.name}} hasn't been submitted</p></ng-template>
+    <p appUnsubmitted>
+    <input type="checkbox"
+           (click)="changeSubmission(assignment)">
+     Assignment {{assignment.name}} hasn't been submitted</p></ng-template>
 </div>
